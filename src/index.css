@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('hhtps://fonts.googeapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+
+@layer base{
+  body {
+    @apply font-[Raleway];
+    @apply bg-white text-blue-900 tracking-wide
+  }
+  li {
+     @apply px-4;
+     @apply cursor-pointer
+  }
+  h1, h2, h3, h4, h5,h6{
+    @apply font-bold
+  }
+
+  h1{
+      @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+  }
+
+  h2{
+    @apply text-3xl sm:text-4xl
+  }
+  button{
+    @apply shadow-xl  rounded-xl uppercase  
+  }  
+}
